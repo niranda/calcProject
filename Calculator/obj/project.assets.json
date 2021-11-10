@@ -8,19 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\D. Korchakovskaya\\.nuget\\packages\\": {}
+    "C:\\Users\\Egor\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\D. Korchakovskaya\\Source\\Repos\\calcProject\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "D:\\git\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "C:\\Users\\D. Korchakovskaya\\Source\\Repos\\calcProject\\Calculator\\Calculator.csproj",
-      "packagesPath": "C:\\Users\\D. Korchakovskaya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\D. Korchakovskaya\\Source\\Repos\\calcProject\\Calculator\\obj\\",
+      "projectPath": "D:\\git\\Calculator\\Calculator.csproj",
+      "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
+      "outputPath": "D:\\git\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\D. Korchakovskaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

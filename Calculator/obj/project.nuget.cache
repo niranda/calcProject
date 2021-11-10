@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3fM4ObEF12LPX03XpiGqJWExX9BW6lm2pta2y6kHRvzpW2+Jag6j58wGKmgRjdKLzAA3+mwgjqMX8ieCvTA1Cg==",
+  "dgSpecHash": "VoaUx4RT3+ssFvOiXotqXGPsFgGwsEb1tFNAoGv7zw2WdGpPsWFayX2d3fBTQy+D3HT/N7zkOFhDham6EZXERQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\D. Korchakovskaya\\Source\\Repos\\calcProject\\Calculator\\Calculator.csproj",
+  "projectFilePath": "D:\\git\\Calculator\\Calculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
