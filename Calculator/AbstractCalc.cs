@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Calculator
 {
-    abstract class AbstractCalc
+      abstract class AbstractCalc
     {
-        string make;
+        protected abstract string make { get; set; }
         public abstract string GetMake();
         public abstract double Add();
         public abstract double Div();
