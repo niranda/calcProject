@@ -6,6 +6,6 @@ namespace Calculator
 {
     interface IAdvanced
     {
-        public double Pow();
+        public delegate double ToRadian(int Degree);
     }
 }
