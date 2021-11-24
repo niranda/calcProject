@@ -4,8 +4,11 @@ using System.Text;
 
 namespace Calculator
 {
-    class AdvancedCalc
+    class AdvancedCalc : OrdinaryCalc, IAdvanced
     {
+        public static double CalcCtg(int Degree)
+        {
 
+        }
     }
 }
