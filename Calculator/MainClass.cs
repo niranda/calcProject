@@ -7,8 +7,6 @@ namespace Calculator
         static void Main(string[] args)
         {
             var ordinaryCalculator = new OrdinaryCalc();
-
-            // обработать AdvancedCalc 
             var advancedCalculator = new AdvancedCalc();
             bool wrongValidation;
             double? answerNumber = null;
@@ -104,6 +102,90 @@ namespace Calculator
                                 {
                                     Console.WriteLine();
                                     Console.WriteLine($"The result is {answerNumber}");
+                                }
+                                break;
+
+                            case 2:
+                                advancedCalculator.make = "Advanced Calculator";
+                                calcMode = advancedCalculator.GetMake();
+                                Console.WriteLine(calcMode);
+                                Console.WriteLine();
+                                Console.Write("Enter the first number: ");
+                                firstNumberValidation = double.TryParse(Console.ReadLine(), out firstNumber);
+                                if (!firstNumberValidation)
+                                {
+                                    Console.WriteLine("The input value isn't a number. Please, try again");
+                                    Console.WriteLine();
+                                    Console.WriteLine("Press 'Enter' to continue");
+                                    Console.ReadLine();
+                                    Console.Clear();
+                                    continue;
+                                }
+                                else
+                                {
+                                    advancedCalculator.SetNum1(firstNumber);
+                                }
+                                Console.WriteLine("If you want to calculate the ctg of the given radian number, press 1");
+                                Console.WriteLine("To turn on the functionality of another calculator tools, press 2");
+
+                                var advancedOptionBool = double.TryParse(Console.ReadLine(), out var advancedOption);
+
+                                switch (advancedOption)
+                                {
+                                    case 1:
+                                        var res = advancedCalculator.CalcCtg(advancedCalculator.GetNum1());
+                                        Console.WriteLine($"{res} ctg");
+                                        break;
+                                    case 2:
+
+                                        Console.Write("Enter the second number: ");
+                                        secondNumberValidation = double.TryParse(Console.ReadLine(), out secondNumber);
+                                        if (!secondNumberValidation)
+                                        {
+                                            Console.WriteLine("The input value isn't a number. Please, try again");
+                                            Console.WriteLine();
+                                            Console.WriteLine("Press 'Enter' to continue");
+                                            Console.ReadLine();
+                                            Console.Clear();
+                                            continue;
+                                        }
+                                        else
+                                        {
+                                            advancedCalculator.SetNum2(secondNumber);
+                                        }
+
+                                        Console.WriteLine("Choose the number of operation below");
+                                        Console.WriteLine("1. Addition (+)");
+                                        Console.WriteLine("2. Substraction (-)");
+                                        Console.WriteLine("3. Division (/)");
+                                        Console.WriteLine("4. Multiplication (*)");
+                                        Console.WriteLine();
+                                        Console.WriteLine("5. Back to main menu");
+                                        option = int.Parse(Console.ReadLine());
+
+                                        switch (option)
+                                        {
+                                            case 1:
+                                                answerNumber = advancedCalculator.Add();
+                                                break;
+                                            case 2:
+                                                answerNumber = advancedCalculator.Sub();
+                                                break;
+                                            case 3:
+                                                answerNumber = advancedCalculator.Div();
+                                                break;
+                                            case 4:
+                                                answerNumber = advancedCalculator.Mul();
+                                                break;
+                                            case 5:
+                                                break;
+                                        }
+                                        if (answerNumber != null)
+                                        {
+                                            Console.WriteLine();
+                                            Console.WriteLine($"The result is {answerNumber}");
+                                        }
+                                        break;
                                 }
                                 break;
                         }

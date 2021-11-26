@@ -6,7 +6,7 @@ namespace Calculator
 {
       abstract class AbstractCalc
     {
-        protected abstract string make { get; set; }
+        public abstract string make { get; set; }
         public abstract string GetMake();
         public abstract double Add();
         public abstract double Div();

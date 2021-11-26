@@ -6,7 +6,7 @@ namespace Calculator
 {
     class AdvancedCalc : OrdinaryCalc, IAdvanced
     {
-        public static double CalcCtg(int radDegree)
+        public double CalcCtg(double radDegree)
         {
             double degree = radDegree * (Math.PI / 180);
             if (degree < -Math.PI || degree > Math.PI)

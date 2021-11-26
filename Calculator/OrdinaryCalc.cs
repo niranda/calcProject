@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Calculator
 {
-    class OrdinaryCalc:AbstractCalc
+    class OrdinaryCalc : AbstractCalc
     {
-        protected override string make { get; set; } = "Ordinary Calulator";
+        public override string make { get; set; } = "Ordinary Calulator";
         private double num1;
         private double num2;
         public double GetNum1()
@@ -25,7 +25,6 @@ namespace Calculator
         {
             this.num2 = num2;
         }
-
 
         public override string GetMake()
         {
