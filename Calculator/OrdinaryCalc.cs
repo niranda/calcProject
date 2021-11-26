@@ -37,7 +37,7 @@ namespace Calculator
         }
         public override double Div()
         {
-            return num1 - num2;
+            return num1 / num2;
         }
         public override double Mul()
         {
@@ -45,7 +45,7 @@ namespace Calculator
         }
         public override double Sub()
         {
-            return num1 / num2;
+            return num1 - num2;
         }
     }
 }
