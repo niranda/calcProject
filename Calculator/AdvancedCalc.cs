@@ -6,14 +6,14 @@ namespace Calculator
 {
     class AdvancedCalc : OrdinaryCalc, IAdvanced
     {
-        public double CalcCtg(double radDegree)
+        public double CalcCtg(double degree)
         {
-            double degree = radDegree * (Math.PI / 180);
-            if (degree < -Math.PI || degree > Math.PI)
+            double radian = degree * Math.PI / 180;
+            if (degree <= -180 || degree >= 180)
             {
                 throw new ArgumentException();
             }
-            return 1 / Math.Tan(radDegree);
+            return 1 / Math.Tan(radian);
         }
     }
 }

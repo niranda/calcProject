@@ -98,7 +98,12 @@ namespace Calculator
                                     case 5:
                                         break;
                                 }
-                                if (answerNumber != null)
+                                if (answerNumber == double.PositiveInfinity)
+                                {
+                                    Console.WriteLine();
+                                    Console.WriteLine("Zero error, please try again");
+                                }
+                                else if (answerNumber != null)
                                 {
                                     Console.WriteLine();
                                     Console.WriteLine($"The result is {answerNumber}");
@@ -133,8 +138,14 @@ namespace Calculator
                                 switch (advancedOption)
                                 {
                                     case 1:
-                                        var res = advancedCalculator.CalcCtg(advancedCalculator.GetNum1());
-                                        Console.WriteLine($"{res} ctg");
+                                        try
+                                        {
+                                            var res = advancedCalculator.CalcCtg(advancedCalculator.GetNum1());
+                                            Console.WriteLine($"{res} rad");
+                                        } catch (ArgumentException exception)
+                                        {
+                                            Console.WriteLine("An error occured. Your number out of range, try again");
+                                        }
                                         break;
                                     case 2:
 
@@ -180,7 +191,12 @@ namespace Calculator
                                             case 5:
                                                 break;
                                         }
-                                        if (answerNumber != null)
+                                        if (answerNumber == double.PositiveInfinity)
+                                        {
+                                            Console.WriteLine();
+                                            Console.WriteLine("Zero error, please try again");
+                                        }
+                                        else if (answerNumber != null)
                                         {
                                             Console.WriteLine();
                                             Console.WriteLine($"The result is {answerNumber}");
