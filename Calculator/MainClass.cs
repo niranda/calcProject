@@ -79,7 +79,7 @@ namespace Calculator
                                 Console.WriteLine("4. Multiplication (*)");
                                 Console.WriteLine();
                                 Console.WriteLine("5. Back to main menu");
-                                option = int.Parse(Console.ReadLine());
+                                var optionBool = int.TryParse(Console.ReadLine(), out option);
 
                                 switch (option)
                                 {
@@ -161,7 +161,7 @@ namespace Calculator
                                         Console.WriteLine("4. Multiplication (*)");
                                         Console.WriteLine();
                                         Console.WriteLine("5. Back to main menu");
-                                        option = int.Parse(Console.ReadLine());
+                                        optionBool = int.TryParse(Console.ReadLine(), out option);
 
                                         switch (option)
                                         {
