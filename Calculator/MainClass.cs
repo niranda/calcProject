@@ -142,7 +142,7 @@ namespace Calculator
                                         {
                                             var res = advancedCalculator.CalcCtg(advancedCalculator.GetNum1());
                                             Console.WriteLine($"{res} rad");
-                                        } catch (ArgumentException exception)
+                                        } catch (ArgumentException)
                                         {
                                             Console.WriteLine("An error occured. Your number out of range, try again");
                                         }
